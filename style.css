@@ -1,0 +1,105 @@
+body{
+    /* background: #78938acf; */
+    /* background: rgba(30, 27, 27, 0.893);*/
+    background : rgb(3 2 2 / 89%); 
+    min-width: 557px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clock-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .left{
+    height: 30vw;
+    width: 30vw;
+} */
+
+/* ./images/pngegg.png */
+#analogClock{
+    margin: 3% auto;
+    height: 40vw;
+    width: 40vw;
+    background: url("https://e7.pngegg.com/pngimages/134/1013/png-clipart-analog-clock-illustration-clock-face-digital-clock-speedometer-angle-white-thumbnail.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+
+}
+
+
+#analogClock{
+    height: 550px;
+    width: 550px;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    /* margin : 0 auto;  */
+}
+
+#hours, #minutes, #seconds{
+    position: absolute;
+    background-color: black;
+    transform-origin: bottom;
+    /* border-top: 2px solid red; */
+}
+
+#hours{
+    width: 1.8%;
+    height: 29%;
+    top: 21%;
+    left: 49.62%;
+    
+}
+
+#minutes{
+    width: 1.4%;
+    height: 32%;
+    top: 18%;
+    left: 49.74%;
+    
+}
+#seconds{
+    width: 1%;
+    height: 36%;
+    top: 14%;
+    left: 50%;  
+}
+
+/* Arrows */
+
+.hour-arrow{
+    width: 0; 
+    height: 0; 
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid black;
+    
+}
+
+
+.hr {
+    background-color: #000;
+    display: block;
+    width: 94%;
+    margin: 10% auto 2% auto;
+}
+
+#footer{
+    text-align: center;
+    margin-bottom: 2%;
+    color: aliceblue;
+}
+
+.pre-loader{
+    height: 100vh;
+    width: 100%;
+    background: #000 url('./images/Bounce-Bar-Preloader/256x256.gif') no-repeat center;
+    position: fixed;
+    z-index: 10000;
+    transition: 200ms ease-in-out;
+}
